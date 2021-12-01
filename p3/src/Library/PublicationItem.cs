@@ -8,11 +8,14 @@ namespace Ucu.Poo.Defense
 
         public int Price { get; set; }
 
+        public int SubTotal { get; set; }
+
         public PublicationItem(Material material, int quantity, int price)
         {
             this.Material = material;
             this.Quantity = quantity;
             this.Price = price;
+            this.SubTotal = price * quantity;
         }
     }
 }
